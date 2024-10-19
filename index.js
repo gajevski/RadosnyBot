@@ -39,7 +39,7 @@ async function checkLiveStream() {
         const channel = client.channels.cache.get(process.env.DISCORD_CHANNEL_ID);
         
         if (channel) {
-          channel.send(`Kanał rozpoczął transmisję na żywo! Oglądaj tutaj: https://www.youtube.com/watch?v=${currentStreamId}`);
+          channel.send(`@Widz Nadajemy na żywo! Oglądaj tutaj: https://www.youtube.com/watch?v=${currentStreamId}`);
         } else {
           console.error('Nie znaleziono kanału Discord!');
         }
